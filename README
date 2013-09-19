@@ -1,0 +1,7 @@
+Notable demo projects from qml-basics:
+
+- animation/basics/property-animation: Basic animations
+- i18n: internationalization example
+- keyinteraction/focus: Keyboard usage and key bindings
+- text/fonts/availableFonts: A list of installed fonts
+- toys/clocks: animations and images
