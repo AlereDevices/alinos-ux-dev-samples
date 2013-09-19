@@ -39,6 +39,9 @@
 ****************************************************************************/
 
 #include <QtGui/QApplication>
+#include <QLocale>
+#include <QTranslator>
+#include <QDebug>
 #include "qmlapplicationviewer.h"
 
 int main(int argc, char *argv[])
@@ -47,6 +50,11 @@ int main(int argc, char *argv[])
 
     QmlApplicationViewer viewer;
     viewer.setOrientation(QmlApplicationViewer::ScreenOrientationLockLandscape);
+
+    QTranslator myappTranslator;
+    myappTranslator.load("qml/i18n/qml_" + QLocale().name());
+    app.installTranslator(&myappTranslator);
+
     viewer.setMainQmlFile(QLatin1String("qml/i18n/i18n.qml"));
     viewer.showExpanded();
 

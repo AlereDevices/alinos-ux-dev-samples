@@ -1,0 +1,5 @@
+Launch translated app with
+
+LC_ALL=fr_FR ./i18n
+
+or any other installed locale

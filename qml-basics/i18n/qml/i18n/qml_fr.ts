@@ -4,7 +4,6 @@
 <context>
     <name>i18n</name>
     <message>
-        <location filename="../i18n.qml" line="30"/>
         <source>Hello</source>
         <translation>Bonjour</translation>
     </message>

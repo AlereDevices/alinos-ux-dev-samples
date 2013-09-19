@@ -34,6 +34,10 @@ symbian:TARGET.UID3 = 0xE069582C
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp
 
+TRANSLATIONS    = qml/i18n/qml_en_AU.ts \
+                    qml/i18n/qml_fr.ts \
+                    qml/i18n/qml_de_DE.ts
+
 # Please do not modify the following two lines. Required for deployment.
 desktopInstallPrefix=$$[QT_INSTALL_EXAMPLES]/declarative/i18n
 exists(qmlapplicationviewer/qmlapplicationviewer.pri):include(qmlapplicationviewer/qmlapplicationviewer.pri)
